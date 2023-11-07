@@ -1,0 +1,20 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+export function getStaticPaths() {
+  return [
+    {params: { blogId: 'clifford' }},
+    {params: { blogId: 'rover' }},
+    {params: { blogId: 'spot' }},
+  ];
+}
+
+---
+
+<Layout title="Blog Detail">
+    <main>
+        <h1>ブログタイトルです</h1>
+        <p>公開日時: 2023/04/11</p>
+        <div>あがうぇらｄｃｖんｍｂ</div>
+    </main>
+</Layout>
